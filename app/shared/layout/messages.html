@@ -1,0 +1,60 @@
+<md-content class="messagesPanel">
+  <md-toolbar class="md-accent" ng-repeat="message in warningsSession">
+    <div class="md-toolbar-tools">
+      <span>{{message.content}}</span>
+      <span flex></span>
+      <md-button class="md-icon-button" aria-label="Close" ng-click="close(message)">
+        <md-icon md-font-icon="icon-close"></md-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <md-toolbar class="md-accent" ng-repeat="message in warnings">
+    <div class="md-toolbar-tools">
+      <span>{{message.content}}</span>
+      <span flex></span>
+      <md-button class="md-icon-button" aria-label="Close" ng-click="close(message)">
+        <md-icon md-font-icon="icon-close"></md-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <md-toolbar class="md-primary" ng-repeat="message in infosSession">
+    <div class="md-toolbar-tools">
+      <span>{{message.content}}</span>
+      <span flex></span>
+      <md-button class="md-icon-button" aria-label="Close" ng-click="close(message)">
+        <md-icon md-font-icon="icon-close"></md-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <md-toolbar class="md-primary" ng-repeat="message in infos">
+    <div class="md-toolbar-tools">
+      <span>{{message.content}}</span>
+      <span flex></span>
+      <md-button class="md-icon-button" aria-label="Close" ng-click="close(message)">
+        <md-icon md-font-icon="icon-close"></md-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <md-toolbar class="md-warn" ng-repeat="message in errorsSession">
+    <div class="md-toolbar-tools">
+      <span>{{message.content}}</span>
+      <span flex></span>
+      <md-button class="md-icon-button" aria-label="Close" ng-click="close(message)">
+        <md-icon md-font-icon="icon-close"></md-icon>
+      </md-button>
+    </div>
+  </md-toolbar>
+
+  <md-toolbar class="md-warn" ng-repeat="message in errors">
+    <div class="md-toolbar-tools">
+      <span>{{message.content}}</span>
+      <span flex></span>
+      <md-button class="md-icon-button" aria-label="Close" ng-click="close(message)">
+        <md-icon md-font-icon="icon-close"></md-icon>
+      </md-button>
+    </div>
+</md-content>

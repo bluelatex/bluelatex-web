@@ -1,0 +1,19 @@
+plugins:
+  - angular
+  - nodeca
+
+globals:
+    angular: true
+    jsonpatch: true
+    XMLHttpRequest: true
+    diff_match_patch: true
+    DIFF_EQUAL: true
+    DIFF_INSERT: true
+    DIFF_DELETE: true
+    ace: true
+
+rules:
+    nodeca/indent: [ 2, spaces, 4 ]
+    angular/ng_di: [2, 'array']
+    angular/ng_typecheck_boolean: 1
+    angular/ng_no_services: 1

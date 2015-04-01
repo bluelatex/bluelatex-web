@@ -1,0 +1,16 @@
+<md-toolbar class="topMenu">
+    <div class="md-toolbar-tools">
+        <md-button class="md-icon-button" aria-label="Settings" hide-gt-md ng-click="mainCt.toggleLeft()">
+            <md-icon md-font-icon="icon-menu"></md-icon>
+        </md-button>
+        <a ui-sref="papers">
+            <img class="logo" src="/assets/img/logo.png" alt="\BlueLatex">
+        </a>
+        <span flex></span>
+
+        <div class="md-toolbar-item" hide-sm hide-md layout="row" ng-include src="'app/shared/layout/header/menu.html'"></div>
+        <md-button class="md-icon-button" aria-label="More" hide-gt-md ng-click="mainCt.toggleRight()">
+            <md-icon md-font-icon="icon-menu"></md-icon>
+        </md-button>
+    </div>
+</md-toolbar>

@@ -1,0 +1,14 @@
+node_modules
+dist
+
+# System
+.DS_Store
+*.log
+solver*
+.Trashes
+
+# IntelliJ IDEA
+.idea/
+!.idea/codeStyleSettings.xml
+*.iml
+.settings

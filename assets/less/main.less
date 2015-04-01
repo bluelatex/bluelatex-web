@@ -1,0 +1,25 @@
+/* Placeholder color */
+::-webkit-input-placeholder {color: @placeholderColor !important; text-overflow: ellipsis;}
+:-moz-placeholder {color: @placeholderColor !important; text-overflow: ellipsis;}
+::-moz-placeholder {color: @placeholderColor !important; text-overflow: ellipsis;}
+:-ms-input-placeholder {color: @placeholderColor !important; text-overflow: ellipsis;}
+/* Selection color */
+::selection {background: @selectionColor; }
+::-moz-selection {background: @selectionColor;}
+
+body {
+  position: relative;
+  font-family: @font;
+  background-color: @backgroundColor;
+  color: @fontColor;
+}
+
+#page {
+  height: 100%;
+  padding-top: @headerHeight;
+}
+#page > md-content {
+    max-width: 100%;
+    min-width: 60%;
+    min-height: 100%;
+}

@@ -1,0 +1,14 @@
+env:
+    browser: true
+    jasmine: true
+    mocha: true
+
+plugins:
+  - jasmine
+  - angular
+
+globals:
+    angular: true
+    inject: true
+rules:
+    camelcase: [1]

@@ -1,0 +1,20 @@
+language: node_js
+
+node_js:
+  - "0.12"
+
+# only trigger builds on master
+branches:
+  only:
+    - master
+
+script:
+  - "npm test"
+
+before_install:
+  - npm install -g grunt-cli
+  - export DISPLAY=:99.0
+  - export CHROME_BIN=chromium-browser
+  - sh -e /etc/init.d/xvfb start
+  - npm install 
+  - grunt

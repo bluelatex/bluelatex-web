@@ -1,0 +1,45 @@
+<md-button ui-sref="papers"
+           ui-sref-active="md-raised"
+           ng-show="mainCt.isAuthenticated()"
+           data-i18n="_Papers_"
+           aria-label="Go to the papers page"></md-button>
+<md-button ui-sref="newPaper"
+           ui-sref-active="md-raised"
+           ng-show="mainCt.isAuthenticated()"
+           data-i18n="_New_paper_"
+           aria-label="Go to the paper create page"></md-button>
+
+<md-button ui-sref="login"
+           ui-sref-active="md-raised"
+           ng-hide="mainCt.isAuthenticated()"
+           data-i18n="_Login_"
+           aria-label="Go to login page"></md-button>
+<md-button ui-sref="register"
+           ui-sref-active="md-raised"
+           ng-hide="mainCt.isAuthenticated()"
+           data-i18n="_Register_"
+           aria-label="Go to register page"></md-button>
+           
+<md-button 
+    ng-if="mainCt.config.clone_url"
+    ng-href="{{mainCt.config.clone_url}}" 
+    target="_blank" 
+    data-i18n="_Clone_me_"
+    aria-label="Clone bluelatex"></md-button>
+<md-button
+    ng-if="mainCt.config.issues_url"
+    ng-href="{{mainCt.config.issues_url}}" 
+    target="_blank" 
+    data-i18n="_Report_an_issue_"
+    aria-label="Report an issue"></md-button>
+
+<md-button ui-sref="profile"
+           ui-sref-active="md-raised"
+           ng-show="mainCt.isAuthenticated()"
+           data-i18n="_Profile_"
+           aria-label="Go to profile page"></md-button>
+<md-button ui-sref="logout"
+           ui-sref-active="md-raised"
+           ng-show="mainCt.isAuthenticated()"
+           data-i18n="_Logout_"
+           aria-label="Logout"></md-button>

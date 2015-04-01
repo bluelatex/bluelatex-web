@@ -1,0 +1,42 @@
+{
+  "name": "BlueLatex",
+  "version": "1.0.0",
+  "description": "The BlueLaTeX server and web client that allows people to collaboratively write LaTeX documents with real-time synchronization.",
+  "repository" : { 
+    "type" : "git", 
+    "url" : "https://github.com/bluelatex/bluelatex-web.git"
+  },
+  "main": "",
+  "scripts": {
+    "test": "grunt karma"
+  },
+  "author": "Thomas Durieux",
+  "license": "Apache License v.2",
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-plugin-angular": "*",
+    "eslint-plugin-jasmine": "*",
+    "eslint-plugin-nodeca": "*",
+    "grunt": "*",
+    "grunt-eslint": "*",
+    "grunt-bower-task": "*",
+    "grunt-injector": "*",
+    "grunt-karma": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-htmlmin": "*",
+    "grunt-angular-templates": "*",
+    "grunt-connect-proxy": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-clean": "*",
+
+    "less-plugin-autoprefix": "*",
+    "less-plugin-clean-css": "*",
+
+    "karma-jasmine": "*",
+    "karma-chrome-launcher": "*"
+  }
+}

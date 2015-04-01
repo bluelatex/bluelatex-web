@@ -1,0 +1,29 @@
+body > header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+md-toolbar.topMenu {
+  line-height: @headerHeight;
+  min-height: @headerHeight;
+  background: @headerBackground;
+  color: @headerColor;
+
+  > .md-toolbar-tools {
+    line-height: @headerHeight;
+    min-height: @headerHeight;
+    height: @headerHeight;
+    
+    .logo {
+      height: @headerHeight;
+    }
+  }
+}
+
+#menu_user {
+  position: relative;
+  float: right;
+  color: @headerColor;
+  margin-left: auto;
+  height: 100%;
+}
